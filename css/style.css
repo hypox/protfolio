@@ -153,6 +153,11 @@ h2::after {
     box-shadow: 0 0 0 0.25rem rgba(78, 84, 200, 0.25);
 }
 
+.form-control::placeholder {
+    color: var(--text-muted);
+    opacity: 0.7;
+}
+
 /* Contact section: ensure dark-mode readability */
 #contact .bg-light {
     background-color: var(--card-bg) !important;
@@ -306,4 +311,130 @@ input:checked + .slider .icon-sun { opacity: 0; }
     border-radius: 10px;
     border: 1px solid var(--border-color);
     display: block;
+}
+
+/* --- Login Page Styling --- */
+#login .input-group-text,
+#register .input-group-text {
+    background-color: var(--input-bg);
+    border-color: var(--border-color);
+    color: var(--text-color);
+}
+
+.nav-tabs {
+    border-bottom: 2px solid var(--border-color);
+}
+
+.nav-tabs .nav-link {
+    color: var(--text-muted);
+    border: none;
+    border-bottom: 2px solid transparent;
+}
+
+.nav-tabs .nav-link.active {
+    color: var(--primary-color);
+    background-color: transparent;
+    border-bottom: 2px solid var(--primary-color);
+}
+
+.nav-tabs .nav-link:hover {
+    color: var(--text-color);
+    border-color: transparent;
+}
+
+/* Login page form labels and text */
+.form-label {
+    color: var(--text-color);
+}
+
+/* Login page card title */
+.card-body h3 {
+    color: var(--text-color);
+}
+
+/* Login page "Back to Home" link */
+body .text-light {
+    color: var(--text-color) !important;
+}
+
+/* --- Footer Styling --- */
+.footer-custom {
+    background-color: var(--card-bg);
+    border-top: 2px solid var(--border-color);
+    color: var(--text-color);
+    margin-top: auto;
+}
+
+.footer-custom h5 {
+    color: var(--text-color);
+}
+
+.footer-text {
+    color: var(--text-muted);
+    line-height: 1.6;
+}
+
+.footer-social-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: var(--input-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 50%;
+    color: var(--text-color);
+    transition: all 0.3s;
+    text-decoration: none;
+}
+
+.footer-social-link:hover {
+    background-color: var(--primary-color);
+    color: #fff;
+    border-color: var(--primary-color);
+    transform: translateY(-3px);
+}
+
+.footer-social-link i {
+    font-size: 1.1rem;
+}
+
+.footer-links li {
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    color: var(--text-muted);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover {
+    color: var(--primary-color);
+    padding-left: 5px;
+}
+
+.footer-contact li {
+    color: var(--text-muted);
+}
+
+.footer-contact a {
+    color: var(--text-muted);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-contact a:hover {
+    color: var(--primary-color);
+}
+
+.footer-divider {
+    border-color: var(--border-color);
+    opacity: 0.5;
+}
+
+.footer-copyright,
+.footer-credits {
+    color: var(--text-muted);
+    font-size: 0.9rem;
 }
