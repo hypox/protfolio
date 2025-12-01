@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webshop Project - Details</title>
+    
+    <link rel="icon" type="image/png" href="../favicon/favicon-32x32.png">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://unpkg.com/aos@next/dist/aos.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="../css/style.css">
+    
+    <!-- Optional: dedicated project styles (create later if needed) -->
+    <!-- <link rel="stylesheet" href="../css/project-detail.css"> -->
+
+    <script src="../js/script.js" defer></script>
+</head>
+
+<body>
+
+    <div id="header"></div>
+
+    <section class="project-hero text-center">
+        <div class="container" data-aos="fade-down">
+            <h1>Project: Web Shop</h1>
+            <p class="lead">An in-depth look at the development process and technologies.</p>
+            <a href="index.html#projects" class="btn btn-outline-primary rounded-pill mt-3">
+                <i class="bi bi-arrow-left me-2"></i>Back to Portfolio
+            </a>
+        </div>
+    </section>
+
+    <div class="container my-5 project-details">
+        <div class="row align-items-center mb-5">
+            <div class="col-md-7 mb-4 mb-md-0" data-aos="fade-right">
+                <img src="../image/webshop/webshop.png" alt="Webshop Main Screen" class="main-project-image">
+            </div>
+            <div class="col-md-5" data-aos="fade-left">
+                <h2>Overview</h2>
+                <p>This project is a functional web application built to demonstrate the integration of frontend and backend technologies. It features a dynamic user interface where users can browse products, and a secure administration panel for managing content.</p>
+                
+                <h5 class="mt-4 mb-3 fw-bold text-primary">Technologies Used:</h5>
+                <ul class="list-unstyled">
+                    <li><i class="bi bi-check-circle-fill text-success me-2"></i>HTML5 & CSS3</li>
+                    <li><i class="bi bi-check-circle-fill text-success me-2"></i>PHP (Backend Logic)</li>
+                    <li><i class="bi bi-check-circle-fill text-success me-2"></i>MySQL (Database)</li>
+                    <li><i class="bi bi-check-circle-fill text-success me-2"></i>Bootstrap 5</li>
+                </ul>
+            </div>
+        </div>
+
+        <hr class="my-5" style="border-color: var(--border-color); opacity: 0.5;">
+
+        <div class="row align-items-center mb-5">
+            <div class="col-md-6 order-2 order-md-1" data-aos="fade-right">
+                <h2>How It Works</h2>
+                <p>The application allows users to input data through secure forms. This data is processed by PHP scripts which validate the input before interacting with the MySQL database.</p>
+                <p>Key technical features include:</p>
+                <ul>
+                    <li><strong>Form Validation:</strong> Both client-side and server-side validation to ensure data integrity.</li>
+                    <li><strong>Security:</strong> Utilization of Prepared Statements (PDO) to prevent SQL Injection attacks.</li>
+                    <li><strong>Dynamic Content:</strong> Products are fetched from the database and rendered dynamically in the HTML.</li>
+                </ul>
+            </div>
+            <div class="col-md-6 order-1 order-md-2 mb-4 mb-md-0" data-aos="fade-left">
+                <img src="../image/webshop/database.png" alt="Database Structure" class="main-project-image">
+            </div>
+        </div>
+
+        <div class="row" data-aos="fade-up">
+            <div class="col-12">
+                <h2 class="text-center mb-4">Gallery & Screenshots</h2>
+                <div class="screenshot-gallery">
+                    <img src="../image/webshop/productenlijst.png" alt="Product List" class="gallery-img">
+                    <img src="../image/webshop/info.jpg" alt="Info Page" class="gallery-img">
+                    <img src="../image/webshop/login.png" alt="Login Page" class="gallery-img">
+                    </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="footer"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+</body>
+</html>

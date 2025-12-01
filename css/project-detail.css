@@ -1,0 +1,77 @@
+/* css/project-detail.css */
+
+/* --- Project Hero Section --- */
+.project-hero {
+    background: linear-gradient(135deg, var(--card-bg), var(--bg-color));
+    padding: 60px 0 40px;
+    border-bottom: 1px solid var(--border-color);
+    margin-bottom: 40px;
+}
+
+.project-hero h1 {
+    color: var(--primary-color);
+    font-weight: 700;
+}
+
+.project-hero p {
+    color: var(--text-muted);
+}
+
+/* --- Hoofdafbeelding --- */
+.main-project-image {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    border: 1px solid var(--border-color);
+    transition: transform 0.3s ease;
+}
+
+.main-project-image:hover {
+    transform: scale(1.02);
+}
+
+/* --- Tekst Secties --- */
+.project-details h2 {
+    color: var(--secondary-color);
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.project-details ul li {
+    color: var(--text-color);
+    margin-bottom: 10px;
+}
+
+.project-details ul li::marker {
+    color: var(--primary-color);
+}
+
+/* --- Screenshot Galerij --- */
+.screenshot-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.gallery-img {
+    width: 100%;
+    height: 200px; /* Vaste hoogte voor netheid */
+    object-fit: cover; /* Zorgt dat plaatje niet uitrekt */
+    border-radius: 10px;
+    border: 1px solid var(--border-color);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.gallery-img:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(78, 84, 200, 0.3);
+    border-color: var(--primary-color);
+}
+
+/* Zorg dat tekstkleur altijd reageert op het thema */
+p, li {
+    color: var(--text-color);
+}
