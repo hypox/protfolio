@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     // --- 2. HEADER LADEN & DARK MODE LOGICA ---
-    fetch('shared/header.html')
+    fetch('html/shared/header.html')
         .then(response => {
             if (!response.ok) throw new Error("Header not found");
             return response.text();
@@ -47,7 +47,7 @@ document.addEventListener("DOMContentLoaded", () => {
         .catch(error => console.error('Error loading header:', error));
 
     // --- 3. FOOTER LADEN ---
-    fetch('shared/footer.html')
+    fetch('html/shared/footer.html')
         .then(response => response.text())
         .then(data => document.getElementById('footer').innerHTML = data);
 
