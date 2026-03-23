@@ -1,0 +1,25 @@
+# Enable custom error pages
+ErrorDocument 404 /protfolio/html/404.html
+ErrorDocument 403 /protfolio/html/403.html
+ErrorDocument 500 /protfolio/html/500.html
+
+# Redirect non-existing pages to 404
+Options -Indexes
+
+# Security: Prevent directory browsing
+Options All -Indexes
+
+# Protect sensitive files
+<FilesMatch "^\.">
+    Order allow,deny
+    Deny from all
+</FilesMatch>
+
+# Protect backend config
+<Files "database.php">
+    Order allow,deny
+    Deny from all
+</Files>
+
+# Prevent access to .git folder
+RedirectMatch 404 /\.git
